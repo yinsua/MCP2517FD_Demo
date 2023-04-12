@@ -1,7 +1,9 @@
+# Env  
 MCU: STM32F411CEU6  
 Platform: Clion & STM32CubeMX  
 Debugger: DapLink
 
+# Connect
 CAN Wire Connect:   
 PA4 - SPI1 CS  
 PA5 - SPI1 CLK  
@@ -15,12 +17,12 @@ PA0 - Red Led (low level active)
 PA1 - Green Led (low level active)  
 PA2 - Blue Led (low level active)  
 
----
+# Timer
 TIM10: Auto Send CAN2.0 Frame, 5K Hz  
 
----  
-MCP2517FD:  
-SYSCLK: 20M Osc on board  
+# MCP2517FD
+SYSCLK: 20M Osc on board
+
 ---  
 ### NOTE:  
 Official library(MicroChip MCP251xFD) have been modified by this in DRV_CANFDSPI_TransmitChannelLoad 
